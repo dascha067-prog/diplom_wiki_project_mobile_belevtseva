@@ -112,15 +112,15 @@
 
 - **локальный запуск**: ввести в командной строке```allure serve allure-results```
 - **запуск через Jenkins**:  кликнуть кнопку ```Allure Report``` в боковом меню
--
 
 #### Результаты запусков:
 
 ![Screenshot_3.png](media/image/Screenshot_3.png)
 ![Screenshot_4.png](media/image/Screenshot_4.png)
 ![Screenshot_5.png](media/image/Screenshot_5.png)
+
 Отчет позволяет получить детальную информацию по все шагам тестов, включая скриншоты, log - файлы и видео о прохождение
-теста, а так же позволяет оперативно понять причину падения теста.
+теста,а так же позволяет оперативно понять причину падения теста.
 ---
 
 ### <img src="media/icons/allure_testops.png" width="30 "> Интеграция с Allure
