@@ -153,6 +153,8 @@
 
 ### [Ссылка на задачу в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1570)
 
+![Screenshot_12.png](media/image/Screenshot_12.png)
+![Screenshot_13.png](media/image/Screenshot_13.png)
 ---
 
 ### <img src="media/icons/tg.png" width="30"> Оповещение о результатах прогона тестов в Telegram
@@ -161,6 +163,7 @@
 ---
 
 ### Пример видео прохождения mobile-автотеста
+
 ![2026-01-1819-13-14-ezgif.com-video-to-gif-converter (1).gif](media/image/2026-01-1819-13-14-ezgif.com-video-to-gif-converter%20%281%29.gif)
 
 
