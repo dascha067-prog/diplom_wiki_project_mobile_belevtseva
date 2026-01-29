@@ -7,9 +7,9 @@
 - <a href="#about">Описание проекта</a>
 - <a href="#mobile-tests">Что проверяется (Mobile-тесты)</a>
 - <a href="#tools">Технологии и инструменты</a>
-- <a href="#run">Запуск тестов</a>
+- Запуск тестов
     - <a href="#jenkins">Jenkins</a>
-- <a href="#reports">Отчёты</a>
+- Отчёты
     - <a href="#allure">Allure</a>
     - <a href="#allure-testops">Allure TestOps</a>
     - <a href="#jira">Jira</a>
@@ -85,8 +85,6 @@
 <a id="run"></a>
 
 ### <img width="30" title="Jenkins" src="media/icons/jenkins.png"> Удаленный запуск автотестов выполняется на сервере Jenkins
-
-<a href="#jenkins"></a>
 
 ### [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/diplom_wiki_project_mobile_belevtseva/)
 
