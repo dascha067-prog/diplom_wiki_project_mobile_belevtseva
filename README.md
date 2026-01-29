@@ -86,7 +86,8 @@
 
 ### <img width="30" title="Jenkins" src="media/icons/jenkins.png"> Удаленный запуск автотестов выполняется на сервере Jenkins
 
-<a href="#jenkins">
+<a href="#jenkins"></a>
+
 ### [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/diplom_wiki_project_mobile_belevtseva/)
 
 #### Для запуска автотестов в Jenkins
