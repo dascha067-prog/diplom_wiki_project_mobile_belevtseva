@@ -82,7 +82,7 @@
 > Параметр `--context` необязателен, по умолчанию тесты запускаются на Android-эмуляторе.
 
 ---
-<a href="#jenkins"></a>
+<a id="jenkins"></a>
 
 ### <img width="30" title="Jenkins" src="media/icons/jenkins.png"> Удаленный запуск автотестов выполняется на сервере Jenkins
 
