@@ -8,8 +8,8 @@ from appium.options.android import UiAutomator2Options
 from appium import webdriver
 from selene import browser, support
 
-from selene_in_action import settings
-from selene_in_action.utils.attach import attach_bstack_video
+from wiki_mobile import settings
+from wiki_mobile.utils.attach import attach_bstack_video
 
 
 @pytest.fixture(scope='function', autouse=True)
@@ -18,6 +18,8 @@ def mobile_management():
         'platformVersion': '11.0',
         'deviceName': 'Google Pixel 5',
         'app': 'bs://sample.app',
+
+        "noReset": False,
 
         'bstack:options': {
             'projectName': 'First Python project',

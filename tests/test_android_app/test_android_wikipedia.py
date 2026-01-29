@@ -1,28 +1,17 @@
 import allure
-from allure_commons._allure import step
-from appium.webdriver.common.appiumby import AppiumBy
-from selene import browser, have
+
+from wiki_mobile.screens.onboarding_screen import OnboardingScreen
+from wiki_mobile.screens.main_screen import MainScreen
+from wiki_mobile.screens.search_screen import SearchScreen
 
 
 @allure.title("Wikipedia: поиск статьи и отображение результатов")
 @allure.tag("mobile", "wikipedia", "search")
 def test_search():
-    with step("Открыть поиск"):
-        browser.element(
-            (AppiumBy.ACCESSIBILITY_ID, "Search Wikipedia")
-        ).click()
+    OnboardingScreen().pass_if_present()
+    MainScreen().should_be_opened().open_search()
 
-    with step("Ввести поисковый запрос"):
-        browser.element(
-            (AppiumBy.ID, "org.wikipedia.alpha:id/search_src_text")
-        ).type("Appium")
-
-    with step("Проверить, что результаты поиска отображаются"):
-        results = browser.all(
-            (AppiumBy.ID, "org.wikipedia.alpha:id/page_list_item_title")
-        )
-
-        results.should(have.size_greater_than(0))
-
-    with step("Проверить, что первый результат содержит искомый текст"):
-        results.first.should(have.text("Appium"))
+    SearchScreen() \
+        .type_query("Appium") \
+        .results_should_be_visible() \
+        .first_result_should_contain("Appium")

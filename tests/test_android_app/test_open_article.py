@@ -1,15 +1,16 @@
 import allure
-from selene import browser
+
+from wiki_mobile.screens.onboarding_screen import OnboardingScreen
+from wiki_mobile.screens.main_screen import MainScreen
+from wiki_mobile.screens.search_screen import SearchScreen
+from wiki_mobile.screens.article_screen import ArticleScreen
 
 
 @allure.title("Wikipedia: открыть статью из результатов поиска")
-@allure.tag("mobile", "wikipedia")
+@allure.tag("mobile", "wikipedia", "article")
 def test_open_article_from_search():
-    with allure.step("Открыть поиск"):
-        browser.element('//*[@text="Search Wikipedia"]').click()
+    OnboardingScreen().pass_if_present()
+    MainScreen().should_be_opened().open_search()
 
-    with allure.step("Ввести запрос поиска"):
-        browser.element('//*[@resource-id="org.wikipedia.alpha:id/search_src_text"]').type("Python")
-
-    with allure.step("Открыть первый результат поиска"):
-        browser.element('//*[@resource-id="org.wikipedia.alpha:id/page_list_item_container"]').click()
+    SearchScreen().type_query("Python").results_should_be_visible().open_first_result()
+    ArticleScreen().should_be_opened()

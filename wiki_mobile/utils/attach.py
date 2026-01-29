@@ -1,5 +1,5 @@
 import allure
-from selene_in_action import settings
+from wiki_mobile import settings
 
 
 def attach_bstack_video(session_id):
